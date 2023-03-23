@@ -12,13 +12,10 @@ CFLAGS= -std=c++11 -pthread
 
 #This rule says that each .o file depends on a .cpp file of the same name
 %.o: %.cpp
-	$(CC) -c -o $@ $< $(CFLAGS) $(DEBUGFLAGS)
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 ALL: Semaphore.o main.o 
-	$(CC) -o ${TARGET_EXEC} Semaphore.o main.o $(CFLAGS) $(DEBUGFLAGS)
-
-DEBUG: DEBUGFLAGS = -DDEBUG
-DEBUG: ALL
+	$(CC) -o ${TARGET_EXEC} Semaphore.o main.o $(CFLAGS)
 
 #this is customary and just deletes all .o files
 CLEAN:
