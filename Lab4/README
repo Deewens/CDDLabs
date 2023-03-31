@@ -1,0 +1,25 @@
+# Lab Four - Reusable Barrier Class
+
+This project shows an implementation of a reusable barrier class that employs a custom Semaphore clas.  
+**Author:** Adrien Dudon
+
+## Requirements
+- Compatible with **Linux** only
+- A C++11 compiler (g++ will do fine)
+- The Make program (should be already installed on your distro)
+
+## Install
+1. Clone this repository: `git clone git@github.com:Deewens/CDDLabs.git`
+2. Go to Lab3/ directory: `cd Lab4`
+3. Build project: `make CLEAN && make`
+4. Run: `./reusableBarrier`
+
+## Project/files Content
+- **Barrier:** the barrier implementation, require Semaphore class
+- **Sempahore:** implemetation of a Semaphore
+- **main.cpp:** the traditional start point of the program, showing off the Barrier implentation
+
+## Licence
+
+This project is licensed under the **GNU General Public License v3.0**.
+See the LICENSE file in this directory.
